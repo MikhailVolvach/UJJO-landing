@@ -1,3 +1,10 @@
 /node_modules
-/app
+/src
 package-lock.json
+.htmlhintrc
+.stylelintrc.json
+gulpfile.js
+package.json
+yarn.lock
+.ecrc
+/.vscode
