@@ -1,0 +1,62 @@
+.hero {
+
+  &__block {
+    margin-top: -1px;
+  }
+
+  &__left,
+  &__right {
+    width: 50%;
+
+    @include tablet() {
+      width: 100%;
+    }
+  }
+
+  &__left {
+    border-right: 1px solid $border-black;
+
+    @include tablet() {
+      border: none;
+    }
+  }
+
+  &__ujjo {
+    @include tablet() {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  // &__right {
+  //   border-left: 1px solid $border-black;
+  // }
+
+  &__image {
+    padding: 20px;
+
+    @include tablet() {
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+
+  &__phrase {
+    border-top: 1px solid $border-black;
+    border-bottom: 1px solid $border-black;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 20px 100px;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 65px;
+    letter-spacing: .5px;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid $border-black;
+  }
+}
